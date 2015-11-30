@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		form	用来定义表单
+		input 	用来接收用户输入的属性
+				type	输入框是什么类型的
+					text	文本框
+					password 密码框
+					radio	单选框(用name属性可以进行分组)
+				name	定义输入框的名称
+				checked	单选框/多选框的默认选中
+				value 定义输入框的值
+	 -->
+	 <!-- 
+	 	表单可以提交中文,会转化为URL编码
+	  -->
+	 <form>
+	 	用户名:<input type="text" name="username"/><br/>
+	 	密码:<input type="password" name="pwd"/><br/>
+	 	性别:<input type="radio" name="sex" checked="checked" value="man"/>男 <input type="radio" name="sex" value="woman"/>女<br/>
+	 	爱好:<input type="checkbox" name="hobby" value="lq"/>篮球
+	 		<input type="checkbox" name="hobby" value="bc"/>编程
+	 		<input type="checkbox" name="hobby" value="yy"/>游泳
+	 	<br/>
+	 	照片:<input type="file" name="photo"/><br/>
+	 	城市:<select>
+	 			<option>北京</option>
+	 			<option>上海</option>
+	 			<option>深圳</option>
+	 		</select>
+	 	<input type="submit" value="注册"/>
+	 	<input type="reset" value="取消"/>
+	 	
+	 </form>
+</body>
+</html>

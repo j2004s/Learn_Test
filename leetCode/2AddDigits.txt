@@ -1,0 +1,13 @@
+public class Solution {
+    public int addDigits(int num) {
+        int buf=0;
+        do
+        {
+            buf=buf+num%10;
+            num=num/10;
+        }while(num!=0);
+        if(buf>=10)
+            return addDigits(buf);
+        return buf;
+    }
+}

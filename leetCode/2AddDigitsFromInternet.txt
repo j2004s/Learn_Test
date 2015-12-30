@@ -1,0 +1,16 @@
+/**
+ * 功能说明：LeetCode 258 - Add Digits
+ * 开发人员：Tsybius2014
+ * 开发时间：2015年8月25日
+ */
+public class Solution {
+     
+    /**
+     * 给定整数不断将它的各位相加，直到相加的结果小于10，返回结果
+     * @param num
+     * @return
+     */
+    public int addDigits(int num) {
+        return (num - 1) % 9 + 1;
+    }
+}

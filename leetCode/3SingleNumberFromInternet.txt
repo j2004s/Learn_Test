@@ -1,0 +1,14 @@
+public class Solution {
+     public int singleNumber(int[] A) {
+        //对所有元素进行异或运算最终结果即为单一元素
+         if(A == null || A.length == 0){
+             return 0;
+         }
+         int result = A[0];
+         
+         for(int i = 1; i < A.length; i++){
+             result = result ^ A[i];
+         }
+         return result;
+     }
+}

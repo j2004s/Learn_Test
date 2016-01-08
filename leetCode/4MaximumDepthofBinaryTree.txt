@@ -1,0 +1,13 @@
+ public class Solution {
+   private static int maxDepthDFS(TreeNode root){
+        //深度优先遍历
+        int leftMaxDepth=0,rightMaxDepth=0;
+        if(null!=root){
+            leftMaxDepth=maxDepthDFS(root.left);
+            rightMaxDepth=maxDepthDFS(root.right);
+            return (Math.max(leftMaxDepth,rightMaxDepth)+1);
+        }
+        else
+            return 0;
+    }
+}

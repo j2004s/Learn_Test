@@ -1,0 +1,27 @@
+public class Solution {
+    public int maxDepth(TreeNode root) {
+        //广度优先遍历,使用队列完成
+        if(null==root){
+            return 0;
+        }
+        Queue<TreeNode> queue =new LinkedList<TreeNode>();
+        queue.add(root);
+        int countNode=1,countDepth=0;
+        while(!queue.isEmpty()){
+            TreeNode bufTreeNode=queue.peek();
+            queue.poll();
+            countNode--;
+            if(null!=bufTreeNode.left){
+                queue.add(bufTreeNode.left);
+            }
+            if(null!=bufTreeNode.right){
+                queue.add(bufTreeNode.right);
+            }
+            if(0==countNode){
+                countDepth++;
+                countNode=queue.size();
+            }
+        }
+        return countDepth;
+    }
+}

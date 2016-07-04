@@ -1,3 +1,0 @@
-INDEX VERSION 1.126
-D:\git\test\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3181153034.index
-\day01\src
